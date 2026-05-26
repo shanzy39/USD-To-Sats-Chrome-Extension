@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "USD to Sats",
+  "version": "1.0.0",
+  "description": "Right-click any highlighted USD amount to convert it to satoshis using the live Bitcoin price.",
+  "permissions": [
+    "contextMenus",
+    "notifications",
+    "storage",
+    "clipboardWrite",
+    "scripting",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://mempool.space/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "USD to Sats",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  }
+}
